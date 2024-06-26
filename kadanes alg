@@ -1,0 +1,10 @@
+# max sum of subarray
+arr = [-2, -3, 4, -1, -2, 1, 5, -3]
+c = arr[0]
+m = arr[0]
+for i in arr[1:]:
+    c = max(i, c + i)
+    if c > m:
+        m = c
+print(m)
+
